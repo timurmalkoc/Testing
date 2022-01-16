@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import test_base_basic.CartCountry;
 import test_base_basic.GreenKartCartPage;
 import test_base_basic.GreenKartPage;
+import test_base_basic.KartTopDeals;
 
 import java.util.HashMap;
 import java.util.List;
@@ -63,6 +64,22 @@ public class GreenKartTest extends TestBase {
         country.clickAgreeBtn();
         country.clickProceedBtn();
         //Thread.sleep(2000);
+
+    }
+
+    @Test
+    public void streamTest() throws InterruptedException {
+        GreenKartPage greenKart = homePage.clickGreenKartPage();
+        KartTopDeals deals = greenKart.clickTopDeals();
+        //deals.getProductName();
+        deals.getPrice("Carrot");
+    }
+
+    @Test
+    public void checkSearchTest() throws InterruptedException {
+        GreenKartPage greenKart = homePage.clickGreenKartPage();
+        KartTopDeals deals = greenKart.clickTopDeals();
+        deals.getSearchResult("Carrot");
 
     }
 }

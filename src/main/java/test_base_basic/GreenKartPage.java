@@ -13,6 +13,7 @@ public class GreenKartPage {
     private By cartBtn = By.cssSelector("img[alt='Cart']");
     private By proceedBtn = By.cssSelector("div[class='cart-preview active'] button");
     private By itemName = By.cssSelector("h4[class='product-name']");
+    private By topDealsBtn = By.linkText("Top Deals");
 
     public GreenKartPage(WebDriver driver) {
         this.driver = driver;
@@ -59,4 +60,11 @@ public class GreenKartPage {
             }
         }
     }
+
+
+    public KartTopDeals clickTopDeals() throws InterruptedException {
+        driver.findElement(topDealsBtn).click();
+        return new KartTopDeals(driver);
+    }
+
 }
