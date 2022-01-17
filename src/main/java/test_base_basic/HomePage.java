@@ -48,4 +48,9 @@ public class HomePage {
         driver.navigate().to("https://www.path2usa.com/travel-companions");
         return new Path2USAPage(driver);
     }
+
+    public AngularPage clickAngularPage(){
+        driver.navigate().to("https://rahulshettyacademy.com/angularpractice/");
+        return new AngularPage(driver);
+    }
 }
