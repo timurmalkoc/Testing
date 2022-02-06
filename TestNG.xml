@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestNG Practice" parallel="tests" thread-count="6">
+    <listeners>
+        <listener class-name="basic_base.Listeners"></listener>
+    </listeners>
+
+    <parameter name="URL" value="academy.com"></parameter>
+    <!-- parameter works only for following test next test you have to enter the parameter again -->
+    <test name="Regression">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="basic_test_cases.TestNGGroup"></class>
+            <class name="basic_test_cases.TestNGTest2"></class>
+            <class name="basic_test_cases.TestNGTest"></class>
+        </classes>
+    </test>
+    <test name="Basics">
+        <classes>
+            <class name="basic_test_cases.TestNGTest">
+                <methods>
+                    <exclude name="skipTest"></exclude>
+                </methods>
+            </class>
+            <class name="basic_test_cases.TestNGTest2">
+                <methods>
+                    <include name="mobile.*"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
