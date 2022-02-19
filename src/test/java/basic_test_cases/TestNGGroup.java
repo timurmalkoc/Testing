@@ -1,11 +1,13 @@
 package basic_test_cases;
 
-import basic_base.TestBase;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class TestNGGroup extends TestBase {
+public class TestNGGroup {
+
+
+
     @Parameters({"URL"})
     @Test (groups = "Smoke", dependsOnMethods = "addItem")
     public void firstTest(String url){
@@ -18,7 +20,7 @@ public class TestNGGroup extends TestBase {
         System.out.println("Items are added !!");
     }
 
-    //@Parameters({"userName","Password"})
+    @Parameters({"userName","Password"})
     @Test (groups = "Smoke", dataProvider = "getUserInfo", priority = 2)
     public void login(String userName, String password){
         System.out.print("user = "+ userName+"\t\t");

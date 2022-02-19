@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="17" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-02-06T17:50:59 EST" name="TestNG Practice" finished-at="2022-02-06T17:50:59 EST" duration-ms="64">
+    <groups>
+      <group name="Smoke">
+        <method signature="TestNGGroup.addItem()[pri:0, instance:basic_test_cases.TestNGGroup@7817fd62]" name="addItem" class="basic_test_cases.TestNGGroup"/>
+        <method signature="TestNGGroup.firstTest(java.lang.String)[pri:0, instance:basic_test_cases.TestNGGroup@7817fd62]" name="firstTest" class="basic_test_cases.TestNGGroup"/>
+        <method signature="TestNGGroup.login(java.lang.String,java.lang.String)[pri:2, instance:basic_test_cases.TestNGGroup@7817fd62]" name="login" class="basic_test_cases.TestNGGroup"/>
+        <method signature="TestNGTest.firstPriorityTest()[pri:0, instance:basic_test_cases.TestNGTest@6a2f6f80]" name="firstPriorityTest" class="basic_test_cases.TestNGTest"/>
+        <method signature="TestNGTest2.mobilePersonalInfo()[pri:0, instance:basic_test_cases.TestNGTest2@75db5df9]" name="mobilePersonalInfo" class="basic_test_cases.TestNGTest2"/>
+        <method signature="TestNGTest.firstPriorityTest()[pri:0, instance:basic_test_cases.TestNGTest@60015ef5]" name="firstPriorityTest" class="basic_test_cases.TestNGTest"/>
+        <method signature="TestNGTest2.mobilePersonalInfo()[pri:0, instance:basic_test_cases.TestNGTest2@11c9af63]" name="mobilePersonalInfo" class="basic_test_cases.TestNGTest2"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2022-02-06T17:50:59 EST" name="Regression" finished-at="2022-02-06T17:50:59 EST" duration-ms="64">
+      <class name="basic_test_cases.TestNGGroup">
+        <test-method signature="addItem()[pri:0, instance:basic_test_cases.TestNGGroup@7817fd62]" started-at="2022-02-06T17:50:59 EST" name="addItem" finished-at="2022-02-06T17:50:59 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItem -->
+        <test-method signature="firstTest(java.lang.String)[pri:0, instance:basic_test_cases.TestNGGroup@7817fd62]" started-at="2022-02-06T17:50:59 EST" name="firstTest" finished-at="2022-02-06T17:50:59 EST" depends-on-methods="basic_test_cases.TestNGGroup.addItem" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[academy.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:2, instance:basic_test_cases.TestNGGroup@7817fd62]" started-at="2022-02-06T17:50:59 EST" name="login" data-provider="getUserInfo" finished-at="2022-02-06T17:50:59 EST" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ali]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:2, instance:basic_test_cases.TestNGGroup@7817fd62]" started-at="2022-02-06T17:50:59 EST" name="login" data-provider="getUserInfo" finished-at="2022-02-06T17:50:59 EST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[veli]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[43534]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="login(java.lang.String,java.lang.String)[pri:2, instance:basic_test_cases.TestNGGroup@7817fd62]" started-at="2022-02-06T17:50:59 EST" name="login" data-provider="getUserInfo" finished-at="2022-02-06T17:50:59 EST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kema]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[44444]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- basic_test_cases.TestNGGroup -->
+      <class name="basic_test_cases.TestNGTest">
+        <test-method signature="firstPriorityTest()[pri:0, instance:basic_test_cases.TestNGTest@6a2f6f80]" started-at="2022-02-06T17:50:59 EST" name="firstPriorityTest" finished-at="2022-02-06T17:50:59 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPriorityTest -->
+      </class> <!-- basic_test_cases.TestNGTest -->
+      <class name="basic_test_cases.TestNGTest2">
+        <test-method signature="mobilePersonalInfo()[pri:0, instance:basic_test_cases.TestNGTest2@75db5df9]" started-at="2022-02-06T17:50:59 EST" name="mobilePersonalInfo" finished-at="2022-02-06T17:50:59 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilePersonalInfo -->
+      </class> <!-- basic_test_cases.TestNGTest2 -->
+    </test> <!-- Regression -->
+    <test started-at="2022-02-06T17:50:59 EST" name="Basics" finished-at="2022-02-06T17:50:59 EST" duration-ms="46">
+      <class name="basic_test_cases.TestNGTest">
+        <test-method is-config="true" signature="clearCookies()[pri:0, instance:basic_test_cases.TestNGTest@60015ef5]" started-at="2022-02-06T17:50:59 EST" name="clearCookies" finished-at="2022-02-06T17:50:59 EST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clearCookies -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:basic_test_cases.TestNGTest@60015ef5]" started-at="2022-02-06T17:50:59 EST" name="setup" finished-at="2022-02-06T17:50:59 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="firstPriorityTest()[pri:0, instance:basic_test_cases.TestNGTest@60015ef5]" started-at="2022-02-06T17:50:59 EST" name="firstPriorityTest" finished-at="2022-02-06T17:50:59 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstPriorityTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:basic_test_cases.TestNGTest@60015ef5]" started-at="2022-02-06T17:50:59 EST" name="tearDown" finished-at="2022-02-06T17:50:59 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="secondPriorityTest()[pri:2, instance:basic_test_cases.TestNGTest@60015ef5]" started-at="2022-02-06T17:50:59 EST" name="secondPriorityTest" finished-at="2022-02-06T17:50:59 EST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- secondPriorityTest -->
+        <test-method is-config="true" signature="checkReport()[pri:0, instance:basic_test_cases.TestNGTest@60015ef5]" started-at="2022-02-06T17:50:59 EST" name="checkReport" finished-at="2022-02-06T17:50:59 EST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkReport -->
+      </class> <!-- basic_test_cases.TestNGTest -->
+      <class name="basic_test_cases.TestNGTest2">
+        <test-method signature="mobileCarLoanTest()[pri:0, instance:basic_test_cases.TestNGTest2@11c9af63]" started-at="2022-02-06T17:50:59 EST" name="mobileCarLoanTest" finished-at="2022-02-06T17:50:59 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileCarLoanTest -->
+        <test-method signature="mobilePersonalInfo()[pri:0, instance:basic_test_cases.TestNGTest2@11c9af63]" started-at="2022-02-06T17:50:59 EST" name="mobilePersonalInfo" finished-at="2022-02-06T17:50:59 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobilePersonalInfo -->
+        <test-method is-config="true" signature="last()[pri:0, instance:basic_test_cases.TestNGTest2@11c9af63]" started-at="2022-02-06T17:50:59 EST" name="last" finished-at="2022-02-06T17:50:59 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- last -->
+      </class> <!-- basic_test_cases.TestNGTest2 -->
+    </test> <!-- Basics -->
+  </suite> <!-- TestNG Practice -->
+</testng-results>
